@@ -32,9 +32,11 @@ a {
 }
 
 .hamburger-item {
-  height: 4px;
-  background-color: white;
-  border-radius: 2px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 
