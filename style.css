@@ -1,10 +1,10 @@
-body {
+ybody {
   background-color: black;
   color: white;
 }
 
 h1 {
-  color: yellow;
+  color: grey;
 }
 
 .main-menu {
@@ -30,7 +30,4 @@ a {
   font-size: 50px;
 }
 
-h1  {
- color: grey;
-}
 }
