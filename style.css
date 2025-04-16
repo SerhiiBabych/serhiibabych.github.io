@@ -22,6 +22,7 @@ a {
 
 // Hamburger Menu
 
+/* Стили для гамбургера */
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -29,14 +30,30 @@ a {
   width: 30px;
   height: 25px;
   cursor: pointer;
+  z-index: 1001; /* Поверх меню */
 }
 
 .hamburger-item {
-    height: 4px;
-    background-color: #fff;
-    border-radius: 2px;
-    width: 50px;
-    margin-bottom: 10px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Скрытое меню */
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.main-nav.open {
+  display: block;
 }
 
 
