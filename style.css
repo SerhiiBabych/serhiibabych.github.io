@@ -19,11 +19,24 @@ a {
   color: white;
 }
 
-.hamburger-item {
+
+// Hamburger Menu
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30px;
-  height: 5px;
-  color: white;
+  height: 25px;
+  cursor: pointer;
 }
+
+.hamburger-item {
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
 
 @media screen and (max-width: 700px) {
   .main-menu {
