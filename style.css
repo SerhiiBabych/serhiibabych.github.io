@@ -35,7 +35,9 @@ a {
 
 .hamburger-item {
   height: 4px;
-  background-color: #333;
+  width: 50px;
+  margin-bottom: 15px;
+  background-color: #fff;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
