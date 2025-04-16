@@ -6,3 +6,40 @@ body {
   color: #333;
 }
   </code></pre>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Serhii Dev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <!-- Highlight.js CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <!-- Highlight.js JS -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <div id="header"></div>
+  <h1>Пример кода</h1>
+
+  <pre><code class="language-css">
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+  </code></pre>
+  <div id="footer"></div>
+  <script>
+    async function loadPageParts() {
+      const header = await fetch("header.html").then(res => res.text());
+      document.getElementById("header").innerHTML = header;
+
+      const footer = await fetch("footer.html").then(res => res.text());
+      document.getElementById("footer").innerHTML = footer;
+    }
+    loadPageParts();
+  </script>
+</body>
+</html>
