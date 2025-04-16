@@ -3,11 +3,11 @@ h1 {
 }
 
 .main-menu {
-  font-size: 50px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 700px) {
   .main-menu {
-  font-size: 50px;
+  font-size: 24px;
 }
 }
