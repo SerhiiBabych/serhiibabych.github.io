@@ -9,8 +9,12 @@
   <p>Мой сайт</p>
   <div id="footer"></div>
   <script>
-    document.getElementById("header").innerHTML = await fetch("header.html").then(res => res.text());
-    document.getElementById("footer").innerHTML = await fetch("footer.html").then(res => res.text());
+    async function loadHeader() {
+      const header = await fetch("header.html").then(res => res.text());
+      document.getElementById("header").innerHTML = header;
+    }
+
+    loadHeader();  // вызовем функцию
   </script>
 </body>
 </html>
