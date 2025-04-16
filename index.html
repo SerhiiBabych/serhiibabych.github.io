@@ -9,12 +9,14 @@
   <p>Мой сайт</p>
   <div id="footer"></div>
   <script>
-    async function loadHeader() {
+    async function loadPageParts() {
       const header = await fetch("header.html").then(res => res.text());
       document.getElementById("header").innerHTML = header;
-    }
 
-    loadHeader();  // вызовем функцию
+      const footer = await fetch("footer.html").then(res => res.text());
+      document.getElementById("footer").innerHTML = footer;
+    }
+    loadPageParts();
   </script>
 </body>
 </html>
